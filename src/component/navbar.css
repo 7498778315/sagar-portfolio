@@ -1,0 +1,146 @@
+  header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+  }
+  nav{
+    display: flex;
+    line-height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(20, 181, 221, 1),rgba(250, 245, 245, 1));
+    border-radius: 8px;
+  }
+  .left h1{
+    font-size: 35px;
+    color: linear-gradient(rgba(28, 161, 155, 0.7),rgb(0,0,0,0.5))
+  }
+  .right ul{
+    display: flex;
+    position: relative;
+  }
+  .right ul li{
+    list-style-type: none;
+  }
+  .right ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 0px 13px;
+    position: relative;
+  }
+  .right ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 0px;
+    height: 3px;
+    background-color: crimson;
+    transition: all 0.50s;
+  }
+  .right ul li a:hover::after{
+    width: 70px;
+  }
+  .right i{
+    display: none;
+    font-size: 25px;
+  }
+  .loginbtn button{
+    padding: 6px 8px ;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+  }
+  @media screen and (max-width : 780px) {
+    .right ul li a{
+      display: none;
+    }
+    .right .nav{
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(20, 181, 221, 0.7),rgba(250, 245, 245, 1));
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .right .nav li{
+        list-style: none;
+    }
+    .right .nav li a{
+        display: block;
+    }
+    .right .nav li a::after{
+        bottom: 15px;
+    }
+
+    
+    .right i{
+      display: block;
+    }
+  }
+  /* header component end here */
+
+  /* Login Form Start Here */
+  .form-contaioner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(rgba(20, 181, 221, 1),rgba(250, 245, 245, 1));
+    width: 400px;
+    padding: 20px 0px;
+    border-radius: 4px;
+    display: none;
+    box-shadow: 0px 0px 5px crimson;
+  }
+  #block{
+    display: block;
+  }
+  .title{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+  }
+  .form-contaioner label{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .form-contaioner input{
+    width: 200px;
+    margin: 10px 0px;
+    padding: 8px;
+    border: none;
+    outline:none;
+    font-size: 18px;
+    background-color: transparent;
+    border-bottom: 1px solid;
+  }
+  .btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .btn button{
+    padding: 6px 8px;
+    border: 2px solid black;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  @media screen and (max-width:450px) {
+    .form-contaioner{
+      width: 350px;
+    }
+  }
