@@ -24,7 +24,7 @@
 }
 .progress{
     width: 50%;
-    background-color: chartreuse;
+    background-color: rgb(247, 0, 255);
     height: 20px;
     text-align: center;
     font-weight: bold;
