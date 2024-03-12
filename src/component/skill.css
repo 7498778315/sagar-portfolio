@@ -9,7 +9,7 @@
     font-size: 35px;
 }
 .progress-container{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 .progress-container span{
     padding: 8px;
@@ -21,11 +21,52 @@
     width: 100%;
     height: 20px;
     background-color: gray;
+    border-radius: 8px;
 }
 .progress{
-    width: 50%;
-    background-color: rgb(247, 0, 255);
+    border-radius: 8px;
     height: 20px;
     text-align: center;
     font-weight: bold;
+    font-size: 13px;
+}
+#html{
+    background-color: rgb(255, 204, 0);
+    width: 80%;
+}
+#css{
+    background-color: rgb(0, 255, 200);
+    width: 90%;
+}
+#js{
+    background-color: rgb(255, 0, 149);
+    width: 75%;
+}
+#bootstrap{
+    background-color: rgb(102, 255, 0);
+    width: 85%;
+}
+#react{
+    background-color: rgb(0, 102, 255);
+    width: 70%;
+}
+@media screen and (max-width: 600px) {
+    .progress-container span{
+        padding: 0px;
+        font-size:20px;
+        font-weight: bold;
+    }
+    .my-progress{
+        margin-top: 5px;
+        width: 100%;
+        height: 14px;
+        background-color: gray;
+        border-radius: 8px;
+    }
+    .progress{
+        border-radius: 8px;
+        height: 14px;
+        text-align: center;
+        font-size: 11px;
+    }
 }
