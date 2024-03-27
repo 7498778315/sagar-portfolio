@@ -7,8 +7,8 @@ export default function Main() {
     <div className='container'>
     <div className='main-container'>
       <div className='main-text'>
-        <h2>Hii,Its Me...</h2>
-        <h1>Sagar Shinde</h1>
+        <h1>Hii,Its Me...</h1>
+        <h2>Sagar Shinde</h2>
         <h4>And Iam A <span>Web Devloper...</span></h4>
         <div>
           <p>The graphic and typographic operators know this well, in reality all the professions dealing with the universe of but what is it?</p>

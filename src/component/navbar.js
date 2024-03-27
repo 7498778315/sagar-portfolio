@@ -20,9 +20,10 @@ export default function Navbar() {
         </div>
         <div className="right">
             <ul className={showhumberger ? "nav" : "" }>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" className='active'>Home</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">About</a> </li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>       
             </ul>
             <i className="fa-solid fa-bars" onClick={toggle}></i>   

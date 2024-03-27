@@ -1,0 +1,50 @@
+.contact-container{
+    width: 100%;
+}
+.contact-container h3{
+    text-align: center;
+    font-size: 35px;
+}
+.contact{
+    width: 70%;
+    margin: 30px auto;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+.input{
+    width: 50%;
+    margin: 0px auto;
+}
+.input input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 17px ;
+    border: none;
+    outline: none;
+}
+.input textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 17px ;
+    border: none;
+    outline: none;
+    height: 80px;
+}
+.input button{
+    padding: 8px;
+    font-size: 17px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 4px crimson;
+    border-radius: 5px ;
+}
+
+@media screen and (max-width:780px) {
+    .input{
+        width: 100%;
+    }
+}

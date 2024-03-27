@@ -13,7 +13,9 @@
     border-radius: 8px;
   }
   .left h1{
-    font-size: 35px;
+    font-size: 40px;
+    transition: all 0.5s;
+    text-shadow:2px 2px 5px crimson ;
     color: linear-gradient(rgba(28, 161, 155, 0.7),rgb(0,0,0,0.5))
   }
   .right ul{
@@ -26,34 +28,30 @@
   .right ul li a{
     text-decoration: none;
     font-size: 25px;
-    color: black;
-    padding: 0px 13px;
+    color: rgb(56, 40, 40);
+    margin: 0px 15px;
     position: relative;
+    transition: all 0.8s;
   }
-  .right ul li a::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
-    width: 0px;
-    height: 3px;
-    background-color: crimson;
-    transition: all 0.50s;
+  .right .active{
+    text-shadow: 0px 0px 10px  crimson;
   }
-  .right ul li a:hover::after{
-    width: 70px;
+  
+  .right ul li a:hover{
+    text-shadow: 0px 0px 10px  crimson;
   }
   .right i{
     display: none;
     font-size: 25px;
   }
   .loginbtn button{
-    padding: 6px 8px ;
+    padding: 8px 10px ;
     font-size: 18px;
     background-color: transparent;
     border: 2px solid black;
     border-radius: 5px;
     color: black;
+    box-shadow: 2px 2px 4px crimson;
   }
   @media screen and (max-width : 780px) {
     .right ul li a{
@@ -65,7 +63,7 @@
         right: 0;
         width: 80%;
         height: 100vh;
-        background-image: linear-gradient(rgba(20, 181, 221, 0.7),rgba(250, 245, 245, 1));
+        background-image: linear-gradient(rgba(18, 204, 250, 1),rgba(250, 245, 245, 1));
         color: black;
         display: flex;
         flex-direction: column;
@@ -79,11 +77,6 @@
     .right .nav li a{
         display: block;
     }
-    .right .nav li a::after{
-        bottom: 15px;
-    }
-
-    
     .right i{
       display: block;
     }

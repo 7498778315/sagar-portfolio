@@ -1,8 +1,9 @@
 
 .Skill-container{
     margin-top: 30px;
-    width: 70%;
+    width: 80%;
     margin: 20px auto;
+    padding: 10px;
 }
 .Skill-container h2{
     text-align: center;
@@ -51,6 +52,9 @@
     width: 70%;
 }
 @media screen and (max-width: 600px) {
+    .Skill-container{
+        width: 95%;
+    }
     .progress-container span{
         padding: 0px;
         font-size:20px;
